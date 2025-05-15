@@ -1,0 +1,55 @@
+{
+	"name": "ipban",
+	"version": "1.0.0",
+	"description": "maintain a list of IPs that are banned",
+	"keywords": [
+		"ip",
+		"mysql",
+		"api"
+	],
+	"homepage": "https://github.com/afarghaly10/ipban#readme",
+	"bugs": {
+		"url": "https://github.com/afarghaly10/ipban/issues"
+	},
+	"repository": {
+		"type": "git",
+		"url": "git+https://github.com/afarghaly10/ipban.git"
+	},
+	"license": "GPL-3.0",
+	"author": "afarghaly10",
+	"type": "commonjs",
+	"main": "server.js",
+	"scripts": {
+		"dev": "npm run migrations && ./node_modules/.bin/nodemon --experimental-vm-modules server.js",
+		"test": "node --expose-gc --no-compilation-cache --experimental-vm-modules ./node_modules/.bin/jest --logHeapUsage --silent --forceExit"
+	},
+	"dependencies": {
+		"axios": "^1.9.0",
+		"compression": "^1.8.0",
+		"cors": "^2.8.5",
+		"dotenv": "^16.5.0",
+		"ejs": "^3.1.10",
+		"express": "^5.1.0",
+		"express-xml-bodyparser": "^0.3.0",
+		"helmet": "^8.1.0",
+		"http-status": "^2.1.0",
+		"joi": "^17.13.3",
+		"jsonwebtoken": "^9.0.2",
+		"morgan": "^1.10.0",
+		"mysql-migrations": "^1.0.7",
+		"mysql2": "^3.14.1",
+		"passport": "^0.7.0",
+		"rate-limiter-flexible": "^7.1.0"
+	},
+	"devDependencies": {
+		"eslint": "^9.26.0",
+		"eslint-config-google": "^0.14.0",
+		"eslint-plugin-jest": "^28.11.0",
+		"globals": "^16.1.0",
+		"jest": "^29.7.0",
+		"jest-cli": "^29.7.0",
+		"nodemon": "^3.1.10",
+		"sinon": "^20.0.0",
+		"supertest": "^7.1.1"
+	}
+}
