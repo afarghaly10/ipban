@@ -1,6 +1,6 @@
 const app = require('./app');
 
-const port = process.env.PORT || 5500;
+const port = process.env.PORT || 5000;
 
 const enforceSsl = process.env.ENFORCE_SSL || 'false';
 

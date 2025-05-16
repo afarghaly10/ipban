@@ -21,6 +21,7 @@
 	"main": "server.js",
 	"scripts": {
 		"dev": "npm run migrations && ./node_modules/.bin/nodemon --experimental-vm-modules server.js",
+		"migrations": "node migration.js up",
 		"test": "node --expose-gc --no-compilation-cache --experimental-vm-modules ./node_modules/.bin/jest --logHeapUsage --silent --forceExit"
 	},
 	"dependencies": {
