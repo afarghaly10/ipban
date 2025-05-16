@@ -6,6 +6,7 @@ module.exports = {
 		'  `reason` TEXT,\n' +
 		'  `bannedAt` TIMESTAMP DEFAULT CURRENT_TIMESTAMP,\n' +
 		'  `expiresAt` TIMESTAMP NULL DEFAULT NULL,\n' +
+		'  `deletedAt` TIMESTAMP NULL DEFAULT NULL,\n' +
 		'  PRIMARY KEY (`id`)\n' +
 		');',
 	down: 'DROP TABLE IF EXISTS `bannedIps`;',

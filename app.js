@@ -92,10 +92,10 @@ app.use(compression());
 app.use(helmet());
 
 // Require routes.
-// const playerRoutes = require('./api/Player/routes');
+const ipRoutes = require('./api/routes');
 
 
-// app.use(playerRoutes);
+app.use(ipRoutes);
 
 
 // catch 404 and forward to error handler

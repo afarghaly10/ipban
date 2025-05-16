@@ -22,4 +22,19 @@ JoiHelper.handle(
 		.required()
 );
 
+/**
+ * @function JoiValidatorHelper#validator~daoInsertIp
+ */
+JoiHelper.handle(
+	'daoInsertIp',
+	'INVALID_IP_SCHEMA',
+	Joi.object({
+		ip: Joi.string().required(),
+		expiresAt: Joi.string().required().min(1),
+		reason: Joi.string().required().min(1),
+	})
+		.unknown(false)
+		.required()
+);
+
 module.exports = JoiHelper.validator;
